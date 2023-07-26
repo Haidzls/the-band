@@ -38,6 +38,10 @@ html{
     width: 33.3333%;
 }
 
+.col-full{
+    width: 100%;
+}
+
 /* commom */
 
 #heading{
@@ -267,4 +271,50 @@ html{
 .tour-dates .buy-buttom:hover{
     background-color: #ccc;
     color: #000;
+}
+
+/* contact */
+
+.contact .contact-section{
+    padding: 32px 0;
+}
+
+.contact .contact-info{
+    font-size: 18px;
+    list-style-type: none;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.contact .contact-info i{
+    width: 30px;
+}
+
+.form .row input{
+    float: left;
+    padding: 8px;
+    margin: 0;
+    border: solid rgb(204, 204, 204) 1px;
+    opacity: 0.6;
+    width: 100%;
+}
+
+.form .row1 .col1{
+    padding-right: 8px;
+}
+
+.form .row1 .col2{
+    padding-left: 8px;
+}
+
+.form .row2 .col{
+    margin: 8px 0;
+}
+
+.send-buttom{
+    background-color:#000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 8px 0;
+    float: right;
 }

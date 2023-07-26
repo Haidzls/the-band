@@ -9,6 +9,37 @@ html{
     font-size: 16px;
     scroll-behavior: smooth;
 }
+/* commom */
+.center-box{
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.col{
+    float: right;
+
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+/* commom */
 
 #heading{
     background-color: #000;
@@ -94,16 +125,58 @@ html{
     padding: 32px 16px;
 }
 
-.slider-text .text-head{
+.slider-text .slider-head{
     margin: 10px 0;
     font-weight: 400;
 }
 
-.slider-text .text-description{
+.slider-text .slider-description{
     margin: 15px 0;
     font-size: 15px;
 }
-
+/* content */
 #content{
     
+}
+/* about team */
+
+#content .about{
+    padding: 64px 16px;
+}
+
+#content .about::after{
+    clear: both;
+}
+
+#content .about .center-box::after{
+    clear: both;
+}
+
+#content .text-head{
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+}
+#content .text-description{
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .team-para{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.member-picture{
+    width: 60%;
+    margin-bottom: 16px;
 }

@@ -15,7 +15,10 @@ html{
     width: 100%;
     position: fixed;
     color: #fff;
-    /* z-index: 1; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 /* nav */
 
@@ -79,8 +82,7 @@ html{
     width: 100%;
     padding-top: 50%;
     background: url('/asset/img/chicago.jpg') center /cover no-repeat;
-    position: relative;
-    top: 42px;
+    margin-top: 42px;
 }
 
 .slider-text{

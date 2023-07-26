@@ -14,8 +14,14 @@ html{
     background-color: #000;
     width: 100%;
     position: fixed;
+    color: #fff;
 }
 /* nav */
+
+#nav-section{
+    display: inline-block;
+}
+
 #nav-section .nav > li{
     display: inline-block;
     padding: 12px 24px;
@@ -42,7 +48,7 @@ html{
     position: absolute;
     color: #000;
     left: 0px;
-    top: 43px;
+    top: 42px;
     list-style-type: none;
     box-shadow: 0 0 16px rgba(3, 3, 3, 0.3)
 }
@@ -56,7 +62,16 @@ html{
     padding: 12px 24px;
 }
 /* nav */
+.search-box{
+    display: inline-block;
+    float: right;
+    padding: 12px 24px;
+}
 
+.search-box:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
 
 #content{
     

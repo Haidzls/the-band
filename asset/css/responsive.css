@@ -61,4 +61,13 @@
         padding: 8px 0 !important;
         margin: 0 !important;
     }
+
+    .buy-buttom{
+        display: block !important;
+        text-align: center;
+    }
+
+    .send-buttom{
+        width: 100%;
+    }
 }

@@ -110,6 +110,13 @@ html{
     background-color: #f44336;
     cursor: pointer;
 }
+
+.menu-box{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 /* slider */
 
 #slider{
@@ -354,10 +361,3 @@ html{
 
 /* reponsive */
 
-@media (max-width: 1024px) and (min-width: 740px){
-    .center-box{
-        width: 100%;
-        padding: 64px 16px;
-        text-align: center;
-    }
-}

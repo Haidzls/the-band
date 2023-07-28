@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>The Band</title>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="stylesheet" href="./asset/css/style.css">
+        <link rel="stylesheet" href="./asset/css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" type="image/x-icon" href="./asset/img/logo.jpg">
     </head>
@@ -32,6 +33,9 @@
             <!-- search -->
             <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="mobile-menu" class="menu-box">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
         <div id="slider">
@@ -169,5 +173,29 @@
                 <p class="end">Powered by <a href="#">w3.css</a></p>
             </div>
         </div>
+        <!-- javascript -->
+        <script>
+            var header = document.getElementById('heading');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+
+            mobileMenu.onclick = function() {
+                var isClose = header.clientHeight === headerHeight;
+                if (isClose) {
+                    header.style.height= 'auto';
+                }else{
+                    header.style.height= null;
+                }
+            }
+
+            var menuItems = document.querySelectorAll('#nav-section .nav > li a');
+            for(var i=0; i<menuItems.length; i++){
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function(){
+                    header.style.height= null;
+                }
+            }
+        </script>
     </body>
 </html>

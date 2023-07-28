@@ -8,6 +8,7 @@
 }
 /* mobile ui */
 @media (max-width: 740px){
+    /* heading */
     #heading{
         height: 42px;
         overflow: hidden;
@@ -41,5 +42,23 @@
         width: 100%;
         padding: 64px 16px;
         text-align: center;
+    }
+    /* content */
+    .col-half,
+    .col-third{
+        width: 100%;
+    }
+
+    .tour-dates .col{
+        padding-bottom: 16px;
+    }
+
+    .contact .contact-info{
+        padding-bottom: 16px;
+    }
+
+    .form .col{
+        padding: 8px 0 !important;
+        margin: 0 !important;
     }
 }

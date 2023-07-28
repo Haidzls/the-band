@@ -22,9 +22,16 @@
         display: inline-block;
     }
 
-    #heading .nav > li{
+    #heading .nav > li {
+        display: block;
+        top: 0 !important;
+
+    }
+
+    .nav li a{
         display: block;
     }
+
     .search-box{
         display: none;
     }
